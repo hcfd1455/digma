@@ -116,6 +116,10 @@ h2 {
   font-size: 1.125rem;
 }
 
+.submit:hover {
+  background-color: #fff;
+}
+
 /* Footer */
 .footer-imgs {
   display: flex;
