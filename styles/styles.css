@@ -24,6 +24,7 @@ h2 {
     text-align: center;
 }
 
+
  /* GitHub Button */
 .nav-btn {
   background-color: #fff;
@@ -36,21 +37,26 @@ h2 {
   right: 3%;
 }
 
-.nav-btn:hover {
-  background-color: #12183C;
-  border: solid 1px #fff;
-}
-
-.nav-btn:hover a {
-  color: #fff;
-}
-
 .nav-btn a {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.125rem;
   color: #12183C;
   text-decoration: none;
+}
+
+.nav-btn:hover {
+  background-color: #12183C;
+  border: solid 1px #fff;
+}
+
+
+.nav-btn:hover a {
+  color: #fff;
+}
+
+.nav-btn a:focus {
+  color: #92A3FF;
 }
 
 /* Flex direction for sections */
@@ -128,6 +134,10 @@ h2 {
 .submit:hover {
   background-color: #12183C;
   border: solid 1px #fff;
+  color: #fff;
+}
+
+.submit:focus {
   color: #fff;
 }
 
