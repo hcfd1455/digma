@@ -26,7 +26,18 @@ h2 {
 
 
  /* GitHub Button */
-.nav-btn {
+ a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: #12183C;
+ }
+
+ a:hover {
+  text-decoration: none !important;
+}
+
+.btn-style {
   background-color: #fff;
   border-radius: 50px;
   border: none;
@@ -35,28 +46,17 @@ h2 {
   position: absolute;
   top: 3%;
   right: 3%;
+  cursor: pointer;
 }
 
-.nav-btn a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 1.125rem;
-  color: #12183C;
-  text-decoration: none;
-}
-
-.nav-btn:hover {
+.btn-style:hover {
   background-color: #12183C;
   border: solid 1px #fff;
-}
-
-
-.nav-btn:hover a {
   color: #fff;
 }
 
-.nav-btn a:focus {
-  color: #92A3FF;
+.btn-style:active {
+  border: solid 1px #92A3FF;
 }
 
 /* Flex direction for sections */
@@ -129,6 +129,7 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.125rem;
+  cursor: pointer;
 }
 
 .submit:hover {
@@ -137,8 +138,31 @@ h2 {
   color: #fff;
 }
 
-.submit:focus {
-  color: #fff;
+.submit:active {
+  border: solid 1px #92A3FF;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #92A3FF;
+  border-bottom: 16px solid #92A3FF;
+  width: 75px;
+  height: 75px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: 30px auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /* Footer */
@@ -205,7 +229,7 @@ h2 {
     display: flex;
     justify-content: center;
   }
-  .nav-btn {
+  .btn-style {
     top: 22%;
     display: flex;
     align-self: center;
